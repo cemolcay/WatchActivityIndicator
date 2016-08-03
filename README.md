@@ -20,7 +20,7 @@ Install
 
 #### Cocoapods
 ``` ruby
-target 'your_watch_extension_target'
+target 'your_watch_extension_target' do
 	platform :watchos, 2.0
 	pod 'WatchActivityIndicator'
 end
