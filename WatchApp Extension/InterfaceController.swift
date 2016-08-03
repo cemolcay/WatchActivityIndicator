@@ -33,10 +33,6 @@ class InterfaceController: WKInterfaceController {
   func stateDidChange() {
     switch state {
     case .Animating:
-      imageView?.startActivityIndicator(
-        imageNamed: "CustomAnimation",
-        animationRange: NSMakeRange(0, frameCount),
-        duration: customAnimationDuration)
       imageView?.startActivityIndicator()
       group?.startActivityIndicator()
       button?.setTitle("Stop")

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WatchActiviyIndicator"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Apple Watch WKInterfaceImage and WKInterfaceGroup extension for showing activity indicators on them quickly."
 
   # This description is used to generate tags and improve search results.
@@ -77,7 +77,7 @@ duration: customAnimationDuration)
 ```
                    DESC
 
-  s.homepage     = "http://EXAMPLE/WatchActiviyIndicator"
+  s.homepage     = "https://github.com/cemolcay/WatchActivityIndicator"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -129,7 +129,7 @@ duration: customAnimationDuration)
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/WatchActiviyIndicator.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/cemolcay/WatchActivityIndicator.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -140,7 +140,7 @@ duration: customAnimationDuration)
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "WatchApp/WatchActivityIndicator.swift"
+  s.source_files  = "WatchApp Extension/WatchActivityIndicator.swift"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -153,7 +153,7 @@ duration: customAnimationDuration)
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "WatchApp/Assets.xcassets"
+  s.resource  = "WatchApp Extension/Assets.xcassets"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -166,7 +166,7 @@ duration: customAnimationDuration)
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "WatchKit", "Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
