@@ -6,7 +6,7 @@ Apple Watch [`WKInterfaceImage`](https://developer.apple.com/library/ios/documen
 Demo
 ----
 
-![alt tag]()
+![alt tag](https://github.com/cemolcay/WatchActivityIndicator/blob/master/Demo.gif?raw=true)
 
 Requirements
 ----
@@ -48,3 +48,7 @@ imageView?.startActivityIndicator(
 	animationRange: NSMakeRange(0, frameCount),
 	duration: customAnimationDuration)
 ```
+
+Works on any image view or group.
+
+![alt tag](https://github.com/cemolcay/WatchActivityIndicator/blob/master/IB.png?raw=true)
