@@ -17,9 +17,9 @@ public extension WKInterfaceImage {
   public func startActivityIndicator(
     imageNamed imageName: String = "Activity",
     animationRange: NSRange = NSMakeRange(0, 30),
-    duration: NSTimeInterval = 1) {
+    duration: TimeInterval = 1) {
     setImageNamed(imageName)
-    startAnimatingWithImagesInRange(animationRange, duration: duration, repeatCount: 0)
+    startAnimatingWithImages(in: animationRange, duration: duration, repeatCount: 0)
   }
 
   /// Stops activity indication animation.
@@ -37,9 +37,9 @@ public extension WKInterfaceGroup {
   public func startActivityIndicator(
     imageNamed imageName: String = "Activity",
     animationRange: NSRange = NSMakeRange(0, 30),
-    duration: NSTimeInterval = 1) {
+    duration: TimeInterval = 1) {
     setBackgroundImageNamed(imageName)
-    startAnimatingWithImagesInRange(animationRange, duration: duration, repeatCount: 0)
+    startAnimatingWithImages(in: animationRange, duration: duration, repeatCount: 0)
   }
 
   /// Stops activity indication animation.

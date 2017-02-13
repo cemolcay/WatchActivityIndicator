@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WatchActiviyIndicator"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Apple Watch WKInterfaceImage and WKInterfaceGroup extension for showing activity indicators on them quickly."
 
   # This description is used to generate tags and improve search results.
@@ -39,8 +39,8 @@ Requirements
 ----
 
 * watchos2.0+
-* Swift 2.0+
-* Xcode 7+
+* Swift 3.0+
+* Xcode 8+
 
 Install
 ----

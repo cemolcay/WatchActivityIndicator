@@ -10,8 +10,8 @@ import WatchKit
 import Foundation
 
 enum State {
-  case Animating
-  case NotAnimating
+  case animating
+  case notAnimating
 }
 
 class InterfaceController: WKInterfaceController {
@@ -19,7 +19,7 @@ class InterfaceController: WKInterfaceController {
   @IBOutlet weak var group: WKInterfaceGroup?
   @IBOutlet weak var button: WKInterfaceButton?
 
-  var state: State = .Animating {
+  var state: State = .animating {
     didSet {
       stateDidChange()
     }
@@ -32,11 +32,11 @@ class InterfaceController: WKInterfaceController {
 
   func stateDidChange() {
     switch state {
-    case .Animating:
+    case .animating:
       imageView?.startActivityIndicator()
       group?.startActivityIndicator()
       button?.setTitle("Stop")
-    case .NotAnimating:
+    case .notAnimating:
       imageView?.stopActivityIndicator()
       group?.stopActivityIndicator()
       button?.setTitle("Start")
@@ -44,6 +44,6 @@ class InterfaceController: WKInterfaceController {
   }
 
   @IBAction func buttonPressed() {
-    state = state == .Animating ? .NotAnimating : .Animating
+    state = state == .animating ? .notAnimating : .animating
   }
 }
