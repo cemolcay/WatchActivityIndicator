@@ -20,9 +20,9 @@ Install
 
 #### Cocoapods
 ``` ruby
-target 'your_watch_extension_target' do
-	platform :watchos, 2.0
-	pod 'WatchActiviyIndicator'
+target 'your_watch_extension_target' do 
+  platform :watchos, 2.0
+  pod 'WatchActiviyIndicator'
 end
 ```
 
@@ -44,9 +44,9 @@ You can set parameters of `startActivityIndicator` for custom animation sequance
 
 ``` swift
 imageView?.startActivityIndicator(
-	imageNamed: "CustomAnimation",
-	animationRange: NSMakeRange(0, frameCount),
-	duration: customAnimationDuration)
+  imageNamed: "CustomAnimation",
+  animationRange: NSMakeRange(0, frameCount),
+  duration: customAnimationDuration)
 ```
 
 Works on any image view or group.
