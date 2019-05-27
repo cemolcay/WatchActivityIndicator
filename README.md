@@ -11,9 +11,9 @@ Demo
 Requirements
 ----
 
-* watchos2.0+
-* Swift 2.0+
-* Xcode 7+
+* watchos 2.0+
+* Swift 5.0+
+* Xcode 10.2+
 
 Install
 ----
